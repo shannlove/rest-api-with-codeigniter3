@@ -1,0 +1,59 @@
+.col-lg-9.row{ width:100%;}
+p.col-lg-9.row{ font-size:13px;}
+.dropdown.mega-dropdown h1 { font-size: 19px; font-weight: bold; margin: 0 0 10px; text-align:left; color:#009fa8; }
+.navbar-default .navbar-nav>li>a {width:100%;font-weight:600; font-family: 'Source Sans Pro Semibold';	padding:7px 20px 7px 20px !important;	font-size:19px;	line-height:31px;	color:#002c58;}
+.navbar-default{ background:none; border:none;}
+.mega-dropdown {position: static !important;}
+.mega-dropdown-menu {border-bottom: 3px solid #00a1ad;border-radius: 0;box-shadow: none;padding: 10px 10px; width: 100%;}
+.mega-dropdown-menu > li > ul {padding: 0;margin: 0;}
+.mega-dropdown-menu > li > ul > li, .search_section ul li {list-style: none;}
+.mega-dropdown-menu > li > ul > li > a, .search_section ul li a {	font-family: 'Source Sans Pro Semibold';display: block;padding: 3px;clear: both;font-weight: normal;line-height: 1.428571429;color: #999;white-space: normal;	font-size:12px;}
+.mega-dropdown-menu > div > div > li > a, .mega-dropdown-menu > div > li > a {display: block;padding: 1px;clear: both;font-weight: normal;line-height: 1.428571429;color: #575756;white-space: normal;	font-size:14px;	text-decoration:none;}
+.mega-dropdown-menu > div > li > a:hover, .mega-dropdown-menu > div > li > a:focus , .mega-dropdown-menu > div > div > li > a:hover, .mega-dropdown-menu > div > div > li > a:focus {text-decoration: none;color: #f7a600;}
+.mega-dropdown-menu > li ul > li > a:hover, .mega-dropdown-menu > li ul > li > a:focus {text-decoration: none;color: #444;background-color: #f5f5f5;}
+.mega-dropdown-menu .dropdown-header, .mega-dropdown-menu li.dropdown-header a{color: #002c58;font-size: 15px;font-weight:600;	padding:3px 0;}
+.mega-dropdown-menu li.dropdown-header a:hover{color: #333;	background:none;}
+.mega-dropdown-menu form {margin:3px 20px;}
+.mega-dropdown-menu .form-group {margin-bottom: 3px;}
+.navbar-nav > li span{padding-left: .5em;padding-top: .2em; font-weight: 100; top:3px;}
+.icon_nav{	 font-size: 13px !important; font-weight: normal !important;	 color:#999;	 margin-left: 5px;}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover{	color:#f7a600; background:#fff; border-bottom:#009e9f solid 5px;}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover .icon_nav{ color:#f7a600;}
+.navbar-default .navbar-nav > .open > a:focus .icon_nav{	color:#f7a600;}
+.border-bottom {  border-bottom: 1px solid #00a1b1;  margin-bottom: 10px;  padding-bottom: 10px;} 
+
+/*  Search Result  */
+.searchSection{ position:relative;}
+.search-result-section{ position:absolute; top:36px; z-index:999; background:#fff; padding:15px; width:100%;}
+.search-result-section ul li{ list-style:none; display:block; line-height:28px; color:#666; }
+.search-result-section ul li a.view-all{color:#00a1b1; text-align:center;}
+.search-result-section ul li a{ font-size:14px; color:#666;}
+.search-result-section ul li.dropdown-header{ color:#002c58; font-weight:bold; border-bottom:1px solid #00a1b1;; width:100%; padding:5px 0; margin-bottom:10px; font-size:15px;}
+.search-result-section ul li.dropdown-header a{font-size:18px; color:#666; text-align:left; line-height:20px;}
+.search-result-section ul li a.doctor_name{ color:#8dc63f; font-size:16px;}
+.result_box{ width:18%; margin-right:10px;}
+@media screen and (min-width:768px) and (max-width:991px)
+{
+.navbar-default .navbar-nav > li > a{font-size: 1.1em;}
+.mega-dropdown-menu:before{left:65px;}
+.mega-dropdown-menu.second:before{left:245px;}
+.mega-dropdown-menu.third:before{left:422px;}
+.mega-dropdown-menu.fourth:before{left:588px;}
+.mega-dropdown-menu > li > ul > li > a{padding:3px 0;}
+.dropdown-header{padding: 3px 0;}
+}
+@media screen and (min-width:992px) and (max-width:1199px)
+{
+.mega-dropdown-menu:before{left:65px;}
+.mega-dropdown-menu.second:before{left:270px;}
+.mega-dropdown-menu.third:before{left:475px;}
+.mega-dropdown-menu.fourth:before{left:655px;}
+.mega-dropdown-menu > li > ul > li > a{padding:3px 0;}
+.dropdown-header{padding: 3px 0;}
+}
+/**shankar for hide test input box**/
+.blank-all{
+	background-color: #ecf0f5;
+    	color: #ecf0f5;
+    	opacity: 0;
+}

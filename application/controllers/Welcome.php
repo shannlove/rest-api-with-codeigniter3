@@ -57,6 +57,12 @@ class Welcome extends Curl_api {
 
                 $this->load->library('form_validation');
                 if($_POST){
+                    $original_value=$json['user']['email'];
+                    if($this->input->post('email') != $original_value) {
+                        $is_unique =  '|is_unique[users.email]';
+                     } else {
+                        $is_unique =  '';
+                     }
                     $this->layout->data['user']=array(
                             'user_id'=>$id,
                             'name'=>$this->input->post('name'),
@@ -65,7 +71,7 @@ class Welcome extends Curl_api {
                         );    
                     $this->form_validation->set_rules('name', 'name', 'required');             
 
-                    $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+                    $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email'.$is_unique);
                     $this->form_validation->set_rules('link', 'Link', 'trim|required|valid_url_format');
 
                     if ($this->form_validation->run() == FALSE)
@@ -104,7 +110,7 @@ class Welcome extends Curl_api {
                         );    
                     $this->form_validation->set_rules('name', 'name', 'required');             
 
-                    $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+                    $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|is_unique[users.email]');
                     $this->form_validation->set_rules('link', 'Link', 'trim|required|valid_url_format');
 
                     if ($this->form_validation->run() == FALSE)
